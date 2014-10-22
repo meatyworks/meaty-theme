@@ -5,9 +5,19 @@
 
 @import "compass/reset";
 
+$black: #000000;
  
 h1 {
-    font-family: "sneakers-pro", "Helvetica Neue", sans-serif !important;   
+	font-family: "hwt-artz", "Helvetica Neue", sans-serif !important;   
+}
+
+h1.title {
+	font-size: 5em;
+	font-size: 80pxo
+}
+
+h2, h3, h4, h5 {
+	font-family: "sneakers-pro", "Helvetica Neue", sans-serif;
 }
 
 p {font-family: sans-serif;} 
@@ -35,3 +45,28 @@ ul.main-menu {
 	}
 }
 
+/*
+div.meaty {
+	height: 700px;
+	background: url(../../img/meatyfinal.svg);
+	background-size: cover;
+	width:100%;
+}*/
+
+img.steak {
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+@media (max-width: 767px) {
+
+h1.title {
+        font-size: 5em;
+	line-height: .9em;
+        font-size: 80px;
+        text-align: center;
+        color: $black;
+}
+
+}

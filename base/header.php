@@ -21,8 +21,9 @@
 
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/bootstrap.css">
+        <?php wp_enqueue_script("jquery"); ?>
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/vendor/modernizr-2.6.2.min.js"></script>
-<?php wp_head(); ?>
+        <?php wp_head(); ?>
 
 </head>
 
