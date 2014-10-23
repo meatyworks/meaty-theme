@@ -80,25 +80,39 @@ h1.title {
 
 /* line 19, ../sass/screen.scss */
 h2, h3, h4, h5 {
-  font-family: "sneakers-pro", "Helvetica Neue", sans-serif;
+  font-family: "sneakers-pro", sans-serif !important;
 }
 
 /* line 23, ../sass/screen.scss */
-p {
-  font-family: sans-serif;
-}
-
-/* line 25, ../sass/screen.scss */
-footer p {
-  font-family: sans-serif;
+em {
+  font-style: italic;
 }
 
 /* line 27, ../sass/screen.scss */
+p, li {
+  font-family: "Helvetica", "Helvetica Neue", sans-serif;
+  font-size: 1.25em;
+  line-height: 1em;
+  font-weight: light;
+  font-weight: 300;
+}
+
+/* line 35, ../sass/screen.scss */
+footer p {
+  font-family: "Helvetica", "Helvetica Neue", sans-serif;
+}
+
+/* line 37, ../sass/screen.scss */
+a {
+  color: black !important;
+}
+
+/* line 41, ../sass/screen.scss */
 .body {
   margin-top: 40px;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 ul.main-menu li a {
   text-indent: -9999px;
   width: 50px;
@@ -108,7 +122,7 @@ ul.main-menu li a {
   float: left;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 ul.main-menu li a:hover {
   background-color: grey;
 }
@@ -120,14 +134,21 @@ div.meaty {
 	background-size: cover;
 	width:100%;
 }*/
-/* line 56, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 img.steak {
   width: 100%;
   margin: 0 auto;
+  max-height: 800px;
 }
 
+/* line 76, ../sass/screen.scss */
+div.about-meaty, div.team-meaty, div.services-meaty {
+  display: none;
+}
+
+/*Media Breakpoints*/
 @media (max-width: 767px) {
-  /* line 64, ../sass/screen.scss */
+  /* line 83, ../sass/screen.scss */
   h1.title {
     font-size: 5em;
     line-height: .9em;

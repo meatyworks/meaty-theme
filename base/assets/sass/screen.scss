@@ -17,12 +17,26 @@ h1.title {
 }
 
 h2, h3, h4, h5 {
-	font-family: "sneakers-pro", "Helvetica Neue", sans-serif;
+font-family: "sneakers-pro", sans-serif !important;
 }
 
-p {font-family: sans-serif;} 
+em {
+font-style: italic;
+}
 
-footer p {font-family: sans-serif; }
+p,li {
+font-family: "Helvetica", "Helvetica Neue", sans-serif; 
+font-size: 1.25em; 
+line-height: 1em;
+font-weight: light;
+font-weight: 300;
+} 
+
+footer p {font-family: "Helvetica", "Helvetica Neue", sans-serif; }
+
+a {
+color: $black !important;
+}
 
 .body { margin-top: 40px; }
 
@@ -56,9 +70,14 @@ div.meaty {
 img.steak {
 	width: 100%;
 	margin: 0 auto;
+	max-height: 800px;
 }
 
+div.about-meaty, div.team-meaty, div.services-meaty {
+display:none;
+}
 
+/*Media Breakpoints*/
 @media (max-width: 767px) {
 
 h1.title {
