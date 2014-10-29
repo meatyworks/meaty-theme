@@ -2,6 +2,7 @@ jQuery(document).ready(function($){
 
 $('img.steak').click(function(){
 	$('div.about-meaty').fadeIn();
+	$('div.back').fadeIn();
 });
 
 $('a.team').click(function(){
@@ -13,9 +14,23 @@ $('a.services').click(function(){
 });
 
 $('a.contact').click(function(){
+<<<<<<< HEAD
+        $('div.contact-meaty').fadeIn();
+});
+
+/*$('a#top').click(function(){
+	$('div.about-meaty').fadeOut();
+	$('div.team-meaty').fadeOut();
+	$('div.services-meaty').fadeOut();
+	$('div.back').fadeOut();
+});
+*/
+
+=======
 	$('div.contact-meaty').fadeIn();
 });
 
+>>>>>>> 5afc37ed289e27dbe089ba1058157be0f1b78120
 //Timer Function Below
 /*
 $('#nav-helper a').click(function(){

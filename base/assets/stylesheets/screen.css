@@ -135,25 +135,46 @@ div.meaty {
 	width:100%;
 }*/
 /* line 70, ../sass/screen.scss */
-img.steak {
+div.container {
+  position: relative;
+}
+/* line 73, ../sass/screen.scss */
+div.container img.steak {
   width: 100%;
   margin: 0 auto;
   max-height: 800px;
 }
+<<<<<<< HEAD
+/* line 79, ../sass/screen.scss */
+div.container div.about-meaty, div.container div.team-meaty, div.container div.services-meaty, div.container div.contact-meaty, div.container div#back-to-top.back {
+=======
 
 /* line 76, ../sass/screen.scss */
 div.about-meaty, div.team-meaty, div.services-meaty, div.contact-meaty {
+>>>>>>> 5afc37ed289e27dbe089ba1058157be0f1b78120
   display: none;
+}
+/* line 83, ../sass/screen.scss */
+div.container div.back {
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
 }
 
 /*Media Breakpoints*/
 @media (max-width: 767px) {
-  /* line 83, ../sass/screen.scss */
+  /* line 96, ../sass/screen.scss */
   h1.title {
     font-size: 5em;
     line-height: .9em;
     font-size: 80px;
     text-align: center;
     color: black;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 108, ../sass/screen.scss */
+  div.content {
+    padding-left: 80px;
   }
 }

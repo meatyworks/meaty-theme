@@ -13,12 +13,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>MEATY WORKS</title> <!--EK EDIT-->
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="google-site-verification" content="FA68Cdvtx09MyAyQsB62fAXnr7ruNHNfkIn83u-vz-w" />
+        <meta name="google-site-verification" content="FA68Cdvtx09MyAyQsB62fAXnr7ruNHNfkIn83u-vz-w" />
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">        
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/bootstrap.css">
         <?php wp_enqueue_script("jquery"); ?>
