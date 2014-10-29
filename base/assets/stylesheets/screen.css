@@ -142,7 +142,7 @@ img.steak {
 }
 
 /* line 76, ../sass/screen.scss */
-div.about-meaty, div.team-meaty, div.services-meaty {
+div.about-meaty, div.team-meaty, div.services-meaty, div.contact-meaty {
   display: none;
 }
 
