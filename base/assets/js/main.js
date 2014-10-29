@@ -12,6 +12,10 @@ $('a.services').click(function(){
 	$('div.services-meaty').fadeIn();
 });
 
+$('a.contact').click(function(){
+	$('div.contact-meaty').fadeIn();
+});
+
 //Timer Function Below
 /*
 $('#nav-helper a').click(function(){
