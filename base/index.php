@@ -12,16 +12,16 @@ get_header(); ?>
  	</div> 
 
 <!--ABOUT-->
-<?php get_template_part( 'page', 'about' ); ?>
+	<?php get_template_part( 'page', 'about' ); ?>
 
 <!--TEAM-->
-<?php get_template_part( 'page', 'team' ); ?>
+	<?php get_template_part( 'page', 'team' ); ?>
  	
 <!--SERVICES-->
-<?php get_template_part( 'page', 'services' ); ?>
+	<?php get_template_part( 'page', 'services' ); ?>
 
 <!--CONTACT US-->
-<?php get_template_part( 'page', 'contact' ); ?>
+	<?php get_template_part( 'page', 'contact' ); ?>
         
 <!--UP ARROW-->
         <div class="col-md-12 back" id="back-to-top">
@@ -29,11 +29,6 @@ get_header(); ?>
         <span class="glyphicon glyphicon-arrow-up"></span>
         </h1>
         </div>	
-
-</div> 
-
-
-<!--EK EDIT... Added </div> so arrow showing at all sections-->
 
 	<?php if (have_posts()) : ?>	 			
   	<?php $home = new WP_Query('tag=home&order=ASC'); ?>

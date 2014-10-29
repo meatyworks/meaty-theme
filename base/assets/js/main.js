@@ -14,7 +14,6 @@ $('a.services').click(function(){
 });
 
 $('a.contact').click(function(){
-<<<<<<< HEAD
         $('div.contact-meaty').fadeIn();
 });
 
@@ -26,11 +25,6 @@ $('a.contact').click(function(){
 });
 */
 
-=======
-	$('div.contact-meaty').fadeIn();
-});
-
->>>>>>> 5afc37ed289e27dbe089ba1058157be0f1b78120
 //Timer Function Below
 /*
 $('#nav-helper a').click(function(){
