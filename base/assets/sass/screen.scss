@@ -34,10 +34,6 @@ font-weight: 300;
 
 footer p {font-family: "Helvetica", "Helvetica Neue", sans-serif; }
 
-a {
-color: $black !important;
-}
-
 .body { margin-top: 40px; }
 
 ul.main-menu {
@@ -78,6 +74,9 @@ img.steak {
 
 div.about-meaty, div.team-meaty, div.services-meaty, div.contact-meaty, div#back-to-top.back {
 	display:none;
+	a {
+color: $black;
+}
 }
 
 div.back {

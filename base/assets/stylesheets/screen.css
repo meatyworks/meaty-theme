@@ -103,16 +103,11 @@ footer p {
 }
 
 /* line 37, ../sass/screen.scss */
-a {
-  color: black !important;
-}
-
-/* line 41, ../sass/screen.scss */
 .body {
   margin-top: 40px;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 ul.main-menu li a {
   text-indent: -9999px;
   width: 50px;
@@ -122,7 +117,7 @@ ul.main-menu li a {
   float: left;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 ul.main-menu li a:hover {
   background-color: grey;
 }
@@ -134,21 +129,25 @@ div.meaty {
 	background-size: cover;
 	width:100%;
 }*/
-/* line 70, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 div.container {
   position: relative;
 }
-/* line 73, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 div.container img.steak {
   width: 100%;
   margin: 0 auto;
   max-height: 800px;
 }
-/* line 79, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 div.container div.about-meaty, div.container div.team-meaty, div.container div.services-meaty, div.container div.contact-meaty, div.container div#back-to-top.back {
   display: none;
 }
-/* line 83, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
+div.container div.about-meaty a, div.container div.team-meaty a, div.container div.services-meaty a, div.container div.contact-meaty a, div.container div#back-to-top.back a {
+  color: black;
+}
+/* line 82, ../sass/screen.scss */
 div.container div.back {
   position: absolute;
   bottom: 40px;
@@ -157,7 +156,7 @@ div.container div.back {
 
 /*Media Breakpoints*/
 @media (max-width: 767px) {
-  /* line 96, ../sass/screen.scss */
+  /* line 95, ../sass/screen.scss */
   h1.title {
     font-size: 5em;
     line-height: .9em;
@@ -167,7 +166,7 @@ div.container div.back {
   }
 }
 @media (min-width: 1200px) {
-  /* line 108, ../sass/screen.scss */
+  /* line 107, ../sass/screen.scss */
   div.content {
     padding-left: 80px;
   }
