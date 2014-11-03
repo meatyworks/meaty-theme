@@ -2,6 +2,7 @@ jQuery(document).ready(function($){
 
 $('img.steak').click(function(){
 	$('div.about-meaty').fadeIn();
+	$('div.back').fadeIn();
 });
 
 $('a.team').click(function(){
@@ -11,6 +12,18 @@ $('a.team').click(function(){
 $('a.services').click(function(){
 	$('div.services-meaty').fadeIn();
 });
+
+$('a.contact').click(function(){
+        $('div.contact-meaty').fadeIn();
+});
+
+/*$('a#top').click(function(){
+	$('div.about-meaty').fadeOut();
+	$('div.team-meaty').fadeOut();
+	$('div.services-meaty').fadeOut();
+	$('div.back').fadeOut();
+});
+*/
 
 //Timer Function Below
 /*

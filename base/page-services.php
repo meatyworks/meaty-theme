@@ -5,6 +5,7 @@
 ?> 	
  	
 <div class="col-md-12  content services-meaty">
+<<<<<<< HEAD
  	
  	<h3 id="services-meaty">Meaty Works is a full-service web studio offering:</h3>
 
@@ -30,5 +31,16 @@
 	
 	<p>Meaty Works provides web-based solution compliant with W3C coding standards for Open Web Platforms as well as Ontario?s Integrated Accessibility Standards Regulation (O.Reg. 191/11) and ISO/IEC 40500:2012</p> 
 
+=======
+<?php $home = new WP_Query('tag=services&order=ASC'); ?>
+<?php while ($home->have_posts()) : $home->the_post(); ?> 	
+
+<h3 id="services-meaty"><?php the_title(); ?></h3>
+
+<?php the_content(); ?>
+
+<?php endwhile; ?>  
+
+>>>>>>> 992503dd861d6157e52bcad0aee51a9f685b6eea
 	<h2><a href="#contact-meaty" class="contact">CONTACT +</a></h2>
  	</div> 	

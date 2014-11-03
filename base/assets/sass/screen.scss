@@ -67,15 +67,28 @@ div.meaty {
 	width:100%;
 }*/
 
+div.container {
+	position: relative;
+
 img.steak {
 	width: 100%;
 	margin: 0 auto;
 	max-height: 800px;
 }
 
-div.about-meaty, div.team-meaty, div.services-meaty {
-display:none;
+div.about-meaty, div.team-meaty, div.services-meaty, div.contact-meaty, div#back-to-top.back {
+	display:none;
 }
+
+div.back {
+	position: absolute;
+	bottom: 40px;
+	left: 0px;
+}
+
+
+}
+
 
 /*Media Breakpoints*/
 @media (max-width: 767px) {
@@ -86,6 +99,14 @@ h1.title {
         font-size: 80px;
         text-align: center;
         color: $black;
+}
+
+}
+
+@media (min-width: 1200px) {
+
+div.content {
+	padding-left:80px;
 }
 
 }

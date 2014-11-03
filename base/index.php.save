@@ -1,0 +1,112 @@
+<?php
+/*
+ * The main template file.
+*/
+
+get_header(); ?>
+
+  <div class="container">  
+  						
+  	<div class="col-md-12" id="steak">
+	<a href="#about-meaty"><img class="steak" src="<?php echo get_template_directory_uri(); ?>/img/meatyfinal.svg" alt="Meaty Works Digital Studio"></a>
+ 	</div> 
+
+<!--ABOUT-->
+	
+ 	<div class="col-md-12 content about-meaty">
+ 	<h2 id="about-meaty">ABOUT</h2>
+	<p>Meaty Works is a boutique digital studio based out of Roncesvalles, Toronto, striving to partner with local businesses, artists, organizations, and individuals who excite and inspire us.  Our aim is to offer our clients unique, personalized, and affordable web-based digital solutions to promote and support their brand, products, and/or projects.</p>
+	<p>As a studio, we are also passionate about collaborating with artists, photographers, videographers, designers, and other creatives to produce high-quality web content and functionality.</p>
+
+	<h2><a href="#team-meaty" class="team" >TEAM +</a></h2>
+ 	</div>
+
+<!--TEAM-->
+ 	
+ 	<div class="col-md-12  content team-meaty">
+ 	
+ 	<h3 id="team-meaty">Three meaties walk into a studio…</h3>
+
+	<h4>Eleni</h4>
+	<p><em>Project Manager</em></p>
+	<p>This Roncesvalles-based meaty spends her time...</p>
+
+	<h4>Mel</h4>
+	<p><em>Developer/Creative Lead</em></p>
+	<p>Originally hailing from Chicago, our front-end meaty...</p>
+
+	<h4>Sokratis</h4>
+	<p><em>Back-End Developer</em></p>
+	<p>As our resident meaty back-end philosopher, Sokratis enjoys...</p>
+
+	<h2><a href="#services-meaty" class="services" >SERVICES +</a></h2>
+ 	</div> 	
+
+<!--SERVICES-->
+
+	<div class="col-md-12  content services-meaty">
+ 	
+ 	<h3 id="services-meaty">Meaty Works is a full-service web studio offering:</h3>
+
+	<ul>
+	<li>+ Website design and development</li>
+	<li>+ Templated design (e.g. wordpress, tumblr, etc.)</li>
+	<li>+ Customized design</li>
+	<li>+ Back-End development and maintenance (e.g. databases)</li>
+	<li>+ Web services and application development</li>
+	<li>+ Content Management System (CMS) Services</li>
+	<li>+ Branding</li>
+	<li>+ Web services (data-driven)</li>
+	<li>+ Website Optimization</li>
+	<li>+ Responsive Design</li>
+	<li>+ Accessible Design</li>
+	<li>+ Search Engine Optimization (SEO)</li>
+	<li>+ Website Analytics</li>
+	<li>+ eCommerce Solutions</li>
+	<li>+ Social-Media Services<li>
+	<li>+ HTML Coded Content (e.g. emails, newsletters, etc.)</li>
+	<li>+ Mobile application development</li>
+	</ul>
+	
+	<p>Meaty Works provides web-based solution compliant with W3C coding standards for Open Web Platforms as well as Ontario’s Integrated Accessibility Standards Regulation (O.Reg. 191/11) and ISO/IEC 40500:2012</p> 
+
+	<h2><a href="#contact-meaty" class="contact">CONTACT +</a></h2>
+ 	</div> 	
+ 
+<!--CONTACT US-->
+        <div class="col-md-12 content contact-meaty">
+
+        <h3 id="contact-meaty">Drop us a line!</h3>
+        <p>We'd love to discuss your meatiest ideas</p>
+        <p><a href="mailto:info@meatyworks.com?Subject=Meaty%20Inquiries">info@meatyworks.com</a></p>
+        </div>
+<!--UP ARROW-->
+	
+
+
+</div> 
+
+
+<!--EK EDIT... Added </div> so arrow showing at all sections-->
+
+	<?php if (have_posts()) : ?>	 			
+  	<?php $home = new WP_Query('tag=home&order=ASC'); ?>
+	<?php while ($home->have_posts()) : $home->the_post(); ?>
+
+  	<div class="col-md-12">
+
+	<?php the_content(); ?>  	 
+
+	</div>
+	
+	<?php endwhile; ?>
+	 <?php endif; ?>
+</div>
+  	<!--<hr/>-->
+
+<?php get_footer(); ?>
+        <div class="col-md-12 back" id="back-to-top">
+        <h1><a href="#steak" id="top">
+        <span class="glyphicon glyphicon-arrow-up"></span>
+        </h1>
+        </div>
